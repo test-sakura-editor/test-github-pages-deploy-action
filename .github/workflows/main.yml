@@ -25,9 +25,9 @@ jobs:
     # Runs a single command using the runners shell
     - name: Clean install dependencies and build
       run: |
-        date > test/out.txt
         mkdir -p test/temp
-        date test/temp/out.txt
+        date > test/out.txt
+        date > test/temp/out.txt
 
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v3
